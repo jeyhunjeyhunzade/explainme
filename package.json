@@ -1,8 +1,6 @@
 {
-  "name": "codesplain",
+  "name": "explainme",
   "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:8000",
   "dependencies": {
     "@exuanbo/file-icons-js": "^3.3.0",
     "@monaco-editor/react": "^4.4.6",
