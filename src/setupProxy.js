@@ -1,9 +1,9 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const target =
-  process.env.NODE_ENV !== "production"
+  process.env.NODE_ENV === "production"
     ? "http://localhost:8000"
-    : "https://explainme.vercel.app";
+    : "https://explainme-server.vercel.app";
 
 module.exports = function (app) {
   app.use(
