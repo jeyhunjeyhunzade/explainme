@@ -1,49 +1,49 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import RootRoute from './routes/RootRoute';
-import HomeRoute from './routes/HomeRoute';
-import NotFoundRoute from './routes/NotFoundRoute';
-import RepositoriesSearchRoute from './routes/RepositoriesSearchRoute';
-import EditorRoute from './routes/EditorRoute';
-import SignUpRoute from './routes/SignUpRoute';
-import SignInRoute from './routes/SignInRoute';
-import SignOutRoute from './routes/SignOutRoute';
-import TestRoute from './routes/TestRoute';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootRoute from "./routes/RootRoute";
+import HomeRoute from "./routes/HomeRoute";
+import NotFoundRoute from "./routes/NotFoundRoute";
+import RepositoriesSearchRoute from "./routes/RepositoriesSearchRoute";
+import EditorRoute from "./routes/EditorRoute";
+import SignUpRoute from "./routes/SignUpRoute";
+import SignInRoute from "./routes/SignInRoute";
+import SignOutRoute from "./routes/SignOutRoute";
+import TestRoute from "./routes/TestRoute";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <RootRoute />,
     children: [
       {
-        path: 'test',
+        path: "test",
         element: <TestRoute />,
       },
       {
-        path: 'signout',
+        path: "signout",
         element: <SignOutRoute />,
       },
       {
-        path: 'signup',
+        path: "signup",
         element: <SignUpRoute />,
       },
       {
-        path: 'signin',
+        path: "signin",
         element: <SignInRoute />,
       },
       {
-        path: '',
+        path: "",
         element: <HomeRoute />,
       },
       {
-        path: 'repositories/:owner/:repoName/*',
+        path: "repositories/:owner/:repoName/*",
         element: <EditorRoute />,
       },
       {
-        path: 'repositories',
+        path: "repositories",
         element: <RepositoriesSearchRoute />,
       },
       {
-        path: '*',
+        path: "*",
         element: <NotFoundRoute />,
       },
     ],
