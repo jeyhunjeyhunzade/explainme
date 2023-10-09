@@ -1,8 +1,8 @@
-import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { SWRConfig } from 'swr';
-import App from './App';
+import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { SWRConfig } from "swr";
+import App from "./App";
 
 const config = {
   revalidateIfStale: false,
@@ -11,7 +11,7 @@ const config = {
   throwOnError: false,
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <SWRConfig value={config}>
