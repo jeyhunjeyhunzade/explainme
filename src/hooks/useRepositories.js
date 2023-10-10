@@ -1,6 +1,5 @@
 import axios from "axios";
 import useSWR from "swr";
-import { serverUrl } from "../api";
 
 async function repositoriesFetcher([url, searchQuery]) {
   const res = await axios.get(url, {
