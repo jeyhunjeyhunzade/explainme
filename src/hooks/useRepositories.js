@@ -1,10 +1,11 @@
-import axios from 'axios';
-import useSWR from 'swr';
+import axios from "axios";
+import useSWR from "swr";
+import { serverUrl } from "../api";
 
 async function repositoriesFetcher([url, searchQuery]) {
   const res = await axios.get(url, {
     params: {
-      q: searchQuery || '',
+      q: searchQuery || "",
       per_page: 10,
     },
   });
@@ -14,7 +15,7 @@ async function repositoriesFetcher([url, searchQuery]) {
 
 export default function useRepositories(searchQuery) {
   const { data, error, isLoading } = useSWR(
-    searchQuery && ['/api/repositories', searchQuery],
+    searchQuery && [`/api/repositories`, searchQuery],
     repositoriesFetcher
   );
 
