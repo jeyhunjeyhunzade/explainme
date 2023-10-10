@@ -37,7 +37,8 @@
     "schema": "server/prisma/schema.prisma"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm:start:server\" \"npm:start:client\"",
+    "start:client": "react-scripts start",
     "start:server": "nodemon --watch server server/index.mjs",
     "build": "react-scripts build",
     "test": "react-scripts test",
