@@ -18,7 +18,6 @@
 <img src="https://img.shields.io/badge/Prisma-2D3748.svg?style&logo=Prisma&logoColor=white" alt="Prisma" />
 </p>
 </div>
-
 ---
 
 ## 📒 Table of Contents
