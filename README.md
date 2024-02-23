@@ -63,7 +63,6 @@ npm test
 
 ## 🤝 Contributing
 
-
 Contributions are always welcome! Please follow these steps:
 1. Fork the project repository. This creates a copy of the project on your account that you can modify without affecting the original project.
 2. Clone the forked repository to your local machine using a Git client like Git or GitHub Desktop.
